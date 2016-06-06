@@ -16,4 +16,10 @@ Gem::Specification.new do |gem|
   if versioned = `git ls-files -z 2>/dev/null`.split("\0") and $?.success?
     gem.files &= versioned
   end
+
+  gem.add_runtime_dependency 'json'
+  gem.add_runtime_dependency 'nokogiri'
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'minitest'
 end
