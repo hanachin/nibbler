@@ -132,6 +132,7 @@ end
 if __FILE__ == $0
   require 'date'
   require 'rspec/autorun'
+  require 'rspec/collection_matchers'
   HTML = DATA.read
   
   class Article < Nibbler
