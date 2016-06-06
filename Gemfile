@@ -1,10 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem 'rake'
-gem 'nokogiri'
-gem 'rspec'
-
-platforms :ruby_18, :jruby do
-  gem 'json'
-  gem 'minitest'
-end
+# Specify your gem's dependencies in turnip.gemspec
+gemspec
