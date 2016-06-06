@@ -216,7 +216,7 @@ if __FILE__ == $0
       hash[:title].should == "Maximum awesome"
       article = hash[:articles].first
       article[:title] == "First article"
-      article.key?(:link).should be_true
+      article.key?(:link).should be true
       article[:link].should be_nil
     end
     
