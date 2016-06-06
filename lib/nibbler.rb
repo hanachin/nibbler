@@ -133,6 +133,11 @@ if __FILE__ == $0
   require 'date'
   require 'rspec/autorun'
   require 'rspec/collection_matchers'
+
+  RSpec.configure do |config|
+    config.expect_with(:rspec) { |c| c.syntax = :should }
+  end
+
   HTML = DATA.read
   
   class Article < Nibbler
